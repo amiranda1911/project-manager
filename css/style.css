@@ -57,6 +57,53 @@ button{
     background-color: var(--button-color);
 }
 
+/* #main-section css section start*/
+#main-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--secondary-color);
+}
+
+#main-section .container.welcome{
+    width: 500px;
+    height: 216px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-font-color);
+}
+
+#main-section .container.welcome h1 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 520px;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+#main-section .container.welcome p {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#main-section .container figure img{
+    width: 540px;
+    height: 436px;
+    overflow: hidden;
+}
+
+/* #main-section css section end*/
+
 #main-footer {
     display: flex;
     flex-direction: row;
