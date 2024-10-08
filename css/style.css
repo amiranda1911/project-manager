@@ -12,7 +12,6 @@
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    
 }
 
 #main-header{
@@ -103,6 +102,57 @@ button{
 }
 
 /* #main-section css section end*/
+
+/* #section-2 css section start*/
+
+#section-2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+}
+
+#section-2 .container{
+    width: 1100px;
+    margin-bottom: 60px;
+}
+
+#section-2 .container h2{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#section-2 .container p{
+    margin: 24px 0 24px 0;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#section-2 .container.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#section-2 .container.cards .card{
+    width: 340px;
+    height: 420px;
+}
+
+#section-2 .container.cards .card h3{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+#section-2 .container.cards .card p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0;
+}
+/* #section-2 css section end*/
 
 #main-footer {
     display: flex;
