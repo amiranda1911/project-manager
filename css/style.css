@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 #main-header{
@@ -44,4 +45,43 @@
     color: #FFF;
     font-size: 16px;
     background-color: #CB4F57;
+}
+
+#main-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 220px;
+    background-color: #331436;
+}
+
+#main-footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 786px;
+}
+
+#main-footer .container p {
+    color: #FFF;
+    font-size: 20;
+}
+
+#main-footer .social-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 136px;
+}
+
+#main-footer .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 25px;
+    background-color: #FFF;
 }
