@@ -1,21 +1,29 @@
+/* set default colors variables */
+:root {
+    --primary-color: #331436;
+    --secondary-color: #7A1745;
+    --button-color: #CB4F57;
+    --primary-font-color: #FFF;
+    --secondary-font-color: #FCF4B6;
+}
+
 /* reset margin and padding for all elemens*/
 *{
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
     
 }
 
 #main-header{
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: auto;
     height: 80px;
-    color: #FFF;
-    background-color: #331436;
+    color: var(--primary-font-color);
+    background-color: var(--primary-color);
     padding: 0 20px 0 20px ;
 }
 
@@ -36,15 +44,14 @@
     font-weight: 100;
 }
 
-
-#main-header button{
+button{
     width: 240px;
     height: 48px;
     border-radius: 8px;
     border: 0;
-    color: #FFF;
+    color: var(--primary-font-color);
     font-size: 16px;
-    background-color: #CB4F57;
+    background-color: var(--button-color);
 }
 
 #main-footer {
@@ -54,7 +61,7 @@
     align-items: center;
     width: 100%;
     height: 220px;
-    background-color: #331436;
+    background-color: var(--primary-color);
 }
 
 #main-footer .container {
@@ -65,7 +72,7 @@
 }
 
 #main-footer .container p {
-    color: #FFF;
+    color: var(--primary-font-color);
     font-size: 20;
 }
 
@@ -83,5 +90,5 @@
     width: 34px;
     height: 34px;
     border-radius: 25px;
-    background-color: #FFF;
+    background-color: var(--primary-font-color);
 }
