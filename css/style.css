@@ -16,9 +16,6 @@
     font-weight: 400;
 }
 
-html, body{
-    height: 100%;
-}
 
 
 #main-header{
@@ -278,24 +275,41 @@ button{
     padding:  60px 0 60px;
 }
 
-#subscribe .container h1{
+#subscribe .container h1, #login .container h1{
     font-size: 40px;
     line-height: 48px;
     font-weight: 700;
     color: var(--primary-color);
 }
 
-#subscribe .container p{
+#subscribe .container p, #login .container p{
     font-size: 16px;
 }
 
-#subscribe .form form{
+#subscribe .form form, #login .form form{
     
     width: 520px;
     height: 268px;
 }
 
 /* #subscribe css section end*/
+
+
+/* #login css section start*/
+
+
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px 0;
+}
+
+#login .card-list .container{
+
+}
+
+/* #login css section end*/
 
 #main-footer {
     display: flex;
