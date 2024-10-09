@@ -64,6 +64,7 @@
     border-radius: 6px;
     border-color: rgba(0, 0, 0, 0.1);
     width: 100%;
+    padding-left: 12px;
 }
 
 .input p {
