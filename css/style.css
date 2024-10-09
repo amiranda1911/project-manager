@@ -16,7 +16,12 @@
     font-weight: 400;
 }
 
-
+html, body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
 #main-header{
     display: flex;
@@ -303,10 +308,6 @@ button{
     align-items: center;
     justify-content: space-around;
     padding: 60px 0;
-}
-
-#login .card-list .container{
-
 }
 
 /* #login css section end*/
