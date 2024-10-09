@@ -171,16 +171,70 @@ button{
 }
 /* #section-2 css section end*/
 
-/* #section-3 css section start*/
+/* #featured-tools-section css section start*/
 
-#section-3{
+#featured-tools-section{
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: #FCF4B680;
+    
+}
+
+#featured-tools-section .section-container .container{
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
 }
 
+#featured-tools-section .section-container .container h1{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: var(--primary-color)
+}
 
-/* #section-3 css section end*/
+#featured-tools-section .section-container .container p{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px;
+}
+
+#featured-tools-section .section-container .card-list{
+    margin-bottom: 60px;
+}
+
+#featured-tools-section .section-container .card-list .card{
+    width: 245px;
+    height: 204px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#featured-tools-section .section-container .card-list .card figure {
+    width: 100px;
+    height: 100px;
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#featured-tools-section .section-container .card-list .card h3 {
+    font-size: 20px;
+    line-height: 28px;
+}
+
+/* #featured-tools-section css section end*/
+
 #main-footer {
     display: flex;
     flex-direction: row;
