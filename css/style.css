@@ -14,8 +14,12 @@
     font-family: "Roboto", sans-serif;
     line-height: 24px;
     font-weight: 400;
-
 }
+
+html, body{
+    height: 100%;
+}
+
 
 #main-header{
     display: flex;
@@ -198,6 +202,7 @@ button{
     font-weight: 500;
     margin: 0;
 }
+
 /* #section-2 css section end*/
 
 /* #featured-tools-section css section start*/
