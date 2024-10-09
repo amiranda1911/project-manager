@@ -46,6 +46,32 @@
     font-weight: 100;
 }
 
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.input label {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.input input {
+    height: 36px;
+    border-radius: 6px;
+    border-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.input p {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
 /* components section start */
 
 button{
