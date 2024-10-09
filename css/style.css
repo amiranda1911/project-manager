@@ -263,6 +263,34 @@ button{
 
 /* #featured-tools-section css section end*/
 
+/* #subscribe css section start*/
+
+#subscribe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  60px 0 60px;
+}
+
+#subscribe .container h1{
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+#subscribe .container p{
+    font-size: 16px;
+}
+
+#subscribe .form form{
+    
+    width: 520px;
+    height: 268px;
+}
+
+/* #subscribe css section end*/
+
 #main-footer {
     display: flex;
     flex-direction: row;
