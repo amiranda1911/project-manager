@@ -119,6 +119,7 @@
     width: 20px;
     height: 20px;
     background-color: unset;
+    border: none;
 }
 
 .todo-card footer ul{
