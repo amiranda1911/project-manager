@@ -24,11 +24,13 @@
     display: flex;
     flex-direction: column;
     align-content: start;
+    align-items: c;
 }
 
 .todo-col h2 {
     font-size: 24px;
     font-weight: 500;
+    margin-bottom: 10px;
 }
 
 #main-menu{
@@ -57,5 +59,133 @@
     border-radius: 6px;
     border: solid thin rgba(255, 255, 255, 0.1);
     padding: 0 8px;
- 
+}
+
+.todo-card{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-between;
+    width: 100%;
+    height: 127px;
+    background-color: #F8F2FF;
+    border: solid 1px var(--primary-color);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.todo-card header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-card .priority{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    width: 30px;
+    border-radius: 8px;
+}
+
+.todo-card .priority p{
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.todo-card .date {
+    font-size: 10px;
+    font-weight: 500;
+    color:rgba(0,0,0,0.5)
+}
+
+.todo-card h3{
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.todo-card footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 39px;
+
+}
+
+.todo-card footer button{
+    width: 20px;
+    height: 20px;
+    background-color: unset;
+}
+
+.todo-card footer ul{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: end;
+    flex-direction: row-reverse;
+}
+
+.todo-card footer ul li{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    margin: 1px;
+}
+
+.todo-card footer ul li a{
+    font-size: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* todo-cards components colors */
+
+
+.todo-card .priority.low{
+    border: solid 1px #EB9961;
+    background-color: #FCF4B6;
+    color: #EB9961;
+}
+
+
+.todo-card .priority.mid{
+    border: solid 1px #CB4F57;
+    background-color: #EB9961;
+    color: #CB4F57;
+}
+
+.todo-card .priority.high{
+    border: solid 1px var(--primary-color);
+    background-color: var(--button-color);
+    color: var(--primary-color);
+}
+
+.todo-card footer ul li:nth-child(1) {
+    background-color: #AF4A00; /* Vermelho */
+}
+
+.todo-card footer ul li:nth-child(2) {
+    background-color: #1A712D; /* Azul */
+}
+
+.todo-card footer ul li:nth-child(3) {
+    background-color: #D92B93; /* Verde */
+}
+
+.todo-card footer ul li:nth-child(4) {
+    background-color: #2E4B83; /* Amarelo */
+}
+
+.todo-card footer ul li:nth-child(5) {
+    background-color: #801E8F; /* Roxo */
 }
