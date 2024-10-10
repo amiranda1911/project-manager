@@ -8,9 +8,12 @@
 }
 
 /* reset margin and padding for all elemens*/
-html, body, div, section, article, img, figure{
+*{
     margin: 0;
     padding: 0;
+}
+
+html, body, div, section, article, img, figure{
     font-family: "Roboto", sans-serif;
     line-height: 24px;
     font-weight: 400;
