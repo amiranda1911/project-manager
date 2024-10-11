@@ -60,6 +60,11 @@
     border-radius: 6px;
     border: solid thin rgba(255, 255, 255, 0.1);
     padding: 0 8px;
+    background-image: url('/static/ic-search.png');
+    background-size: 1.3em;
+    background-repeat: no-repeat;
+    background-position-x: 190px;
+    background-position-y: center;
 }
 
 .todo-card{
