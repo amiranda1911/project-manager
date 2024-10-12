@@ -1,10 +1,22 @@
-/* set default colors variables */
+/* set default colors and fonts variables */
 :root {
     --primary-color: #331436;
     --secondary-color: #7A1745;
     --button-color: #CB4F57;
     --primary-font-color: #FFF;
     --secondary-font-color: #FCF4B6;
+
+    --thin-font-weight: 100;
+    --regular-font-weight: 400;
+    --medium-font-weight: 500;
+    --bold-font-weight: 700;
+
+    --font-size-thin: 12px;
+    --font-size-mini: 14px;
+    --font-size-small: 16px;
+    --font-size-regular: 20px;
+    --font-size-big: 40px;
+
 }
 
 /* reset margin and padding for all elemens*/
@@ -16,7 +28,7 @@
 html, body, div, section, article, img, figure{
     font-family: "Roboto", sans-serif;
     line-height: 24px;
-    font-weight: 400;
+    font-weight: var(--regular-font-weight);
     box-sizing: border-box;
 }
 
@@ -53,7 +65,7 @@ html, body {
 .brand h1 {
     display: flex;
     align-items: center;
-    font-weight: 100;
+    font-weight: var(--thin-font-weight);
 }
 
 .input {
@@ -63,9 +75,9 @@ html, body {
 }
 
 .input label {
-    font-size: 14px;
+    font-size: var(--font-size-mini);
     line-height: 20px;
-    font-weight: 500;
+    font-weight: var(--medium-font-weight);
     color: var(--primary-color);
 }
 
@@ -78,12 +90,17 @@ html, body {
 }
 
 .input p {
-    font-size: 12px;
+    font-size: var(--font-size-thin);
     line-height: 16px;
     color: rgba(0, 0, 0, 0.5);
 }
 
 /* components section start */
+.container.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 .button{
     display: flex;
@@ -94,10 +111,9 @@ html, body {
     height: 48px;
     border-radius: 8px;
     border: 0;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: var(--font-size-small);
+    font-weight: var(--medium-font-weight);
     color: var(--secondary-font-color);
-    font-size: 16px;
     background-color: var(--button-color);
 }
 
@@ -156,9 +172,9 @@ html, body {
     flex-wrap: nowrap;
     width: 520px;
     margin-bottom: 24px;
-    font-weight: 700;
+    font-weight: var(--bold-font-weight);
     font-style: normal;
-    font-size: 40px;
+    font-size: var(--font-size-big);
     line-height: 48px;
 }
 
@@ -168,7 +184,7 @@ html, body {
 
 #main-section .container.welcome p {
     margin-bottom: 24px;
-    font-size: 16px;
+    font-size: var(--font-size-small);
 }
 
 #main-section .container figure img{
@@ -195,19 +211,13 @@ html, body {
 }
 
 #section-2 .container h2{
-    font-weight: 700;
-    font-size: 40px;
+    font-weight: var(--bold-font-weight);
+    font-size: var(--font-size-big);
 }
 
 #section-2 .container p{
     margin: 24px 0 24px 0;
-    font-size: 16px;
-}
-
-#section-2 .container.cards{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    font-size: var(--font-size-small);
 }
 
 #section-2 .container.cards .card{
@@ -216,13 +226,13 @@ html, body {
 }
 
 #section-2 .container.cards .card h3{
-    font-size: 16px;
+    font-size: var(--font-size-small);
 }
 
 #section-2 .container.cards .card p{
-    font-size: 16px;
+    font-size: var(--font-size-small);
     line-height: 24px;
-    font-weight: 500;
+    font-weight: var(--medium-font-weight);
     margin: 0;
 }
 
@@ -249,15 +259,16 @@ html, body {
 }
 
 #featured-tools-section .section-container .container h1{
-    font-size: 40px;
+    font-size: var(--font-size-big);
     line-height: 48px;
-    font-weight: 700;
+    font-weight: var(--bold-font-weight);
     margin-bottom: 24px;
     color: var(--primary-color)
 }
 
 #featured-tools-section .section-container .container p{
-    font-size: 16px;
+    font-size: var(--font-size-small);
+    font-weight: var(--regular-font-weight);
     line-height: 24px;
     margin-bottom: 24px;
 }
@@ -286,7 +297,7 @@ html, body {
 }
 
 #featured-tools-section .section-container .card-list .card h3 {
-    font-size: 20px;
+    font-size: var(--font-size-regular);
     line-height: 28px;
 }
 
@@ -302,14 +313,14 @@ html, body {
 }
 
 #subscribe .container h1, #login .container h1{
-    font-size: 40px;
+    font-size: var(--font-size-big);
     line-height: 48px;
-    font-weight: 700;
+    font-weight: var(--bold-font-weight);
     color: var(--primary-color);
 }
 
 #subscribe .container p, #login .container p{
-    font-size: 16px;
+    font-size: var(--font-size-small);
 }
 
 #subscribe .form form, #login .form form{
@@ -352,7 +363,7 @@ html, body {
 
 #main-footer .container p {
     color: var(--primary-font-color);
-    font-size: 20;
+    font-size: var(--font-size-regular);
 }
 
 #main-footer .social-icons {
