@@ -24,7 +24,6 @@
     display: flex;
     flex-direction: column;
     align-content: start;
-    align-items: c;
 }
 
 .todo-col h2 {
@@ -200,4 +199,28 @@
 
 .todo-card footer ul li:nth-child(5) {
     background-color: #801E8F; /* Roxo */
+}
+
+@media screen and (max-width: 768px ) {
+   
+    #main-menu{
+        display: none;
+    }
+
+    .kanban-canvas{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+    }
+    
+    .todo-col{
+        width: 240px;
+        background-color: white;
+        padding: 16px;
+        margin: 16px;
+        border-radius: 8px;
+        min-height: 0;
+        flex-direction: column;
+        
+    }
 }
