@@ -14,13 +14,18 @@
         </div>
         <nav id="main-menu">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#settings">Settings</a></li>
-                <li><a href="#profile">Profile</a></li>
-                <li><input type="text" placeholder="Search in site"></li>
+                <li><a href="#home" onclick="stopPropagation(event)">Home</a></li>
+                <li><a href="#about" onclick="stopPropagation(event)">About</a></li>
+                <li><a href="#settings" onclick="stopPropagation(event)">Settings</a></li>
+                <li><a href="#profile" onclick="stopPropagation(event)">Profile</a></li>
+                <li><input type="text" placeholder="Search in site" onclick="stopPropagation(event)"></li>
             </ul>
         </nav>
+        <button id="responsive-menu" >
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </button>
     </header>
     <section id="kanban">
         <div class="section-container">

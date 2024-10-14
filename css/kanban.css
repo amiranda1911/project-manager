@@ -24,7 +24,6 @@
     display: flex;
     flex-direction: column;
     align-content: start;
-    align-items: c;
 }
 
 .todo-col h2 {
@@ -205,4 +204,104 @@
 
 .todo-card footer ul li:nth-child(5) {
     background-color: #801E8F; /* Roxo */
+}
+
+#responsive-menu{
+    display: none;
+}
+
+@media screen and (max-width: 768px ) {
+   
+    #main-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: start;
+        background-color: rgba(200, 200, 200, 0.8);
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        z-index: -1;
+    }
+
+    #main-menu ul{
+        width: 60%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        background-color: var(--primary-color);
+    }
+
+    #main-menu ul li{
+        display:flex;
+        width: 100%;
+    }
+
+    #main-menu ul li:last-child{
+        order: -1;
+        align-items: center;
+    }
+
+    #main-menu ul li input{
+        margin: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #main-menu ul li a {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 100%;
+    }
+
+    #main-menu ul li a:hover {
+        background-color: #AF4A00;
+    }
+
+    .kanban-canvas{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+    }
+    
+    .todo-col{
+        width: 240px;
+        background-color: white;
+        padding: 16px;
+        margin: 16px;
+        border-radius: 8px;
+        min-height: 0;
+        flex-direction: column;
+    }
+
+    .line {
+        height: 4px;
+        background-color:var(--secondary-font-color);
+        margin: 4px 0;
+        transition: 0.3s;
+    }
+
+    #responsive-menu{
+        display: block;
+        padding: 0 5px;;
+        width: 30px;
+        height: 50px;
+        margin: 10px;
+        border-radius: 6px;
+        background-color: unset;
+        border: none;
+        box-sizing: content-box;
+        
+    }
+    .show{
+        opacity: 1 !important;
+        z-index: 99999 !important;
+    }
 }
