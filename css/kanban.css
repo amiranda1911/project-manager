@@ -217,6 +217,7 @@
         background-color: rgba(200, 200, 200, 0.8);
         opacity: 0;
         transition: opacity 1s ease-in-out;
+        z-index: -1;
     }
 
     #main-menu ul{
@@ -282,10 +283,6 @@
         transition: 0.3s;
     }
 
-    .hide{
-        opacity: 1;
-    }
-
     #responsive-menu{
         display: block;
         padding: 0 5px;;
@@ -300,5 +297,6 @@
     }
     .show{
         opacity: 1 !important;
+        z-index: 99999 !important;
     }
 }
