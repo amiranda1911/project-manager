@@ -6,6 +6,8 @@ let loginButton = document.getElementById("login-button")
 let emailLogin = document.getElementById("login[email]")
 let password = document.getElementById("login[password]")
 
+let mainMenu = document.getElementById("main-menu")
+let responsiveMenuButton = document.getElementById("responsive-menu")
 
 function createModal(message){
     let modalBackground = document.createElement('div')
@@ -38,16 +40,34 @@ if(subscribeButton !== null)
             alert('Invalid email!');    
     })
 
-
-loginButton.addEventListener('click', function(e){
-    e.preventDefault()
-    console.log("login")
-    let emailRegex = /\w+@\w+.\w/
-    if(emailRegex.test(emailLogin.value)){
-        if(password.value != "")
-            window.location.href = '/kanban.html'; 
-        else
-            alert('Invalid password!')
-    }else
-        alert('Invalid email!');    
+if(loginButton !== null)
+    loginButton.addEventListener('click', function(e){
+        e.preventDefault()
+        console.log("login")
+        let emailRegex = /\w+@\w+.\w/
+        if(emailRegex.test(emailLogin.value)){
+            if(password.value != "")
+                window.location.href = '/kanban.html'; 
+            else
+                alert('Invalid password!')
+        }else
+            alert('Invalid email!');    
 })
+
+
+if(mainMenu !== null)
+    mainMenu.addEventListener('click', function(e){
+        e.preventDefault()
+        mainMenu.classList.toggle('show')
+    })
+
+if(responsiveMenuButton !== null)
+    responsiveMenuButton.addEventListener('click', function(e){
+        e.preventDefault()
+        mainMenu.classList.toggle('show')
+    })
+
+
+function stopPropagation(e){
+    e.stopPropagation()
+}
