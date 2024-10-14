@@ -35,9 +35,9 @@ if(subscribeButton !== null)
                     createModal('Sucessful subscribe!')
                 }
             }else
-                alert('Invalid username!')
+                createModal('Invalid username!')
         }else
-            alert('Invalid email!');    
+            createModal('Invalid email!');    
     })
 
 if(loginButton !== null)
@@ -49,9 +49,9 @@ if(loginButton !== null)
             if(password.value != "")
                 window.location.href = '/kanban.html'; 
             else
-                alert('Invalid password!')
+                createModal('Invalid password!')
         }else
-            alert('Invalid email!');    
+            createModal('Invalid email!');    
 })
 
 
