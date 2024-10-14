@@ -6,14 +6,32 @@ let loginButton = document.getElementById("login-button")
 let emailLogin = document.getElementById("login[email]")
 let password = document.getElementById("login[password]")
 
+
+function createModal(message){
+    let modalBackground = document.createElement('div')
+    let modalBox = document.createElement('div')
+    modalBackground.classList.add('modal-background') 
+    modalBox.classList.add('modal-box')
+    modalBox.innerHTML = message
+    modalBackground.appendChild(modalBox)
+    let footer = document.getElementById('main-footer');
+    footer.appendChild(modalBackground)
+    setTimeout(function(){
+        document.querySelector('.modal-background').remove()
+    }, 2000)
+}
+
+
 if(subscribeButton !== null)
     subscribeButton.addEventListener('click', function(e){
         e.preventDefault()
         let emailRegex = /\w+@\w+.\w/
         if(emailRegex.test(email.value)){
             if(username.value != ""){
-                if(localStorage.getItem(email.value) === null)
+                if(localStorage.getItem(email.value) === null){
                     localStorage.setItem(email.value, username.value)
+                    createModal('Sucessful subscribe!')
+                }
             }else
                 alert('Invalid username!')
         }else

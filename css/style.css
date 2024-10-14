@@ -96,6 +96,32 @@ html, body {
 }
 
 /* components section start */
+.modal-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(200, 200, 200, 0.8);
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.modal-box{
+    display: block;
+    margin: auto;
+    padding: 30px;
+    border-radius: 8px;
+    border: solid 2px var(--secondary-color);
+    box-shadow: #331436;
+    background-color: white;
+    font-size: var(--font-size-regular);
+    color: var(--primary-color)
+}
+
 .container.cards{
     display: flex;
     flex-direction: row;
